@@ -12264,6 +12264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6961399880975973099, guid: 06220372179a9924b9154cfc0804e92c, type: 3}
+  puppetPrefab: {fileID: 6500565129674830158, guid: 1a3ea80edda2093488f1dd10801a1300, type: 3}
+  puppetProbably: 100
   muzzlePoint: {fileID: 1097719057}
   bulletSpeed: 15
   fireRate: 1
@@ -13484,7 +13486,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 0, y: 7.5, z: 7.5, w: -8}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0

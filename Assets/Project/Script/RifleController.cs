@@ -12,6 +12,12 @@ public class RifleController : MonoBehaviour
     [Tooltip("発射される弾のプレハブ")]
     public GameObject bulletPrefab;
 
+    [Tooltip("発射される人形のプレハブ")]
+    public GameObject puppetPrefab;
+
+    [Tooltip("人形が発射される確率")]
+    public int puppetProbably = 10;
+
     [Tooltip("弾が発射される位置")]
     public Transform muzzlePoint;
 
@@ -45,6 +51,11 @@ public class RifleController : MonoBehaviour
         if (loadedIndicator != null)
         {
             loadedIndicator.SetActive(Time.time >= nextFireTime);
+        }
+        // 以下はテストです
+        if(Input.GetKeyDown(KeyCode.Space)) 
+        {
+            Instantiate(puppetPrefab, muzzlePoint.position, muzzlePoint.rotation);
         }
     }
 
@@ -94,7 +105,7 @@ public class RifleController : MonoBehaviour
 
     private void FireBullet()
     {
-        if (bulletPrefab == null || muzzlePoint == null)
+        if (bulletPrefab == null || puppetPrefab == null || muzzlePoint == null)
         {
             Debug.LogError("Bullet Prefab または Muzzle Point が設定されていません。");
             return;
@@ -105,12 +116,20 @@ public class RifleController : MonoBehaviour
             audioSource.PlayOneShot(fireSound);
         }
 
-        GameObject bullet = Instantiate(bulletPrefab, muzzlePoint.position, muzzlePoint.rotation);
-
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        if (rb != null)
+        int randomValue = Random.Range(0, 99);
+        GameObject bullet;
+        if (randomValue < puppetProbably)
         {
-            rb.AddForce(muzzlePoint.forward * bulletSpeed, ForceMode.Impulse);
+            bullet = Instantiate(puppetPrefab, muzzlePoint.position, muzzlePoint.rotation);
+        }
+        else
+        {
+            bullet = Instantiate(bulletPrefab, muzzlePoint.position, muzzlePoint.rotation);
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddForce(muzzlePoint.forward * bulletSpeed, ForceMode.Impulse);
+            }
         }
     }
 }
