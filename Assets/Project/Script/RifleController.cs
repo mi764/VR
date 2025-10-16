@@ -52,11 +52,6 @@ public class RifleController : MonoBehaviour
         {
             loadedIndicator.SetActive(Time.time >= nextFireTime);
         }
-        // 以下はテストです
-        if(Input.GetKeyDown(KeyCode.Space)) 
-        {
-            Instantiate(puppetPrefab, muzzlePoint.position, muzzlePoint.rotation);
-        }
     }
 
     public void StartShooting(ActivateEventArgs args)
