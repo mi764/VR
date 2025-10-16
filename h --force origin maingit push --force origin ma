@@ -1,0 +1,49 @@
+[33mcommit df87192a77c0f6561da5fe5346f573d6aa2edbd0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Thu Oct 16 18:18:00 2025 +0900
+
+    add .gitattributes
+
+[33mcommit 01fcc91178813eed3653d576069dd0480a938773[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Thu Oct 16 18:13:16 2025 +0900
+
+    Revert "デモ版完成"
+    
+    This reverts commit 2505ff0947609e98f050aed2bde7153b4f01526b.
+
+[33mcommit 59070e9cf4a1882347a660dd9722020b1ac12540[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Thu Oct 16 18:09:24 2025 +0900
+
+    デモ版完成
+
+[33mcommit 1bca1b577fa7c549d6c4253d3ce28d5ab0ea1c11[m[33m ([m[1;32mtagata[m[33m)[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Tue Oct 14 18:17:09 2025 +0900
+
+    add Clown1M.obj
+
+[33mcommit 11b849ffad233164cce85af320bc636b45baf363[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Tue Oct 14 18:14:05 2025 +0900
+
+    solve conflict
+
+[33mcommit 34bb588115c3987b4a5f866b16dbf24408f84191[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Tue Oct 14 18:04:15 2025 +0900
+
+    update unity version
+
+[33mcommit 8a27312a90845856f753270446a444bd835ce2db[m
+Author: unchunks <unchunks.dev@gmail.com>
+Date:   Tue Oct 14 17:55:09 2025 +0900
+
+    add some files
+
+[33mcommit b42d6979a0e18308b9b0d0c672da654056089555[m
+Author: mi764 <kuairengongnei791@gmail.com>
+Date:   Tue Jul 15 18:34:54 2025 +0900
+
+    first commit
